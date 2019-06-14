@@ -26,11 +26,11 @@ function oneTry(number) {
   number = number.toString();
   console.log(number.toString());
   if (number.length > 4 || number.length < 4) {
-    return 'Only 4-digit numbers are accepted';
+    return alert('Only 4-digit numbers are accepted');
   } 
   for (let i in number) {
     if (number.indexOf(number[i]) != i) {
-      return 'Each digit must be unique';
+      return alert('Each digit must be unique');
     }
     if (random.includes(number[i])) {
       if (random.indexOf(number[i]) === number.indexOf(number[i])) {
